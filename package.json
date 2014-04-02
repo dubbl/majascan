@@ -1,0 +1,9 @@
+{
+  "name": "majascan",
+  "title": "Maja Scan",
+  "id": "jid1-KFQXABevKH0OGA",
+  "description": "(Trying to) detect malicious javascript as you browse.",
+  "author": "Hauke Luebbers",
+  "license": "MIT License",
+  "version": "0.1"
+}
