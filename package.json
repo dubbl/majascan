@@ -1,9 +1,36 @@
 {
   "name": "majascan",
-  "title": "Maja Scan",
+  "title": "Majascan",
   "id": "jid1-KFQXABevKH0OGA",
   "description": "(Trying to) detect malicious javascript as you browse.",
   "author": "Hauke Luebbers",
   "license": "MIT License",
-  "version": "0.1"
+  "version": "0.1",
+  "preferences": [{
+		"type": "boolint",
+		"title": "XSS Test Code Detection",
+		"name": "xssTest",
+        "description": "Looks for typical Javascript code used to test for XSS vulnerabilities",
+		"on": "1",
+		"off": "0",
+        "value": 1
+    },
+    {
+		"type": "boolint",
+		"title": "Reflective XSS Detection in URL",
+		"name": "xssReflectiveGET",
+        "description": "Looks for JavaScript in the request URL to prevent reflective XSS",
+		"on": "1",
+		"off": "0",
+		"value": 1
+	},
+	{
+		"type": "boolint",
+		"title": "Reflective XSS Detection in POST data",
+		"name": "xssReflectivePOST",
+        "description": "Looks for JavaScript in the POST data to prevent reflective XSS",
+		"on": "1",
+		"off": "0",
+		"value": 1
+	}]
 }

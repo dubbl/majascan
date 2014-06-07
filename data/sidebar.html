@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Majascan Incident Report Sidebar</title>
+		<style>
+			p { 
+				font-family: Arial;
+			}
+			p#warning { 
+				font-weight: bold;
+				padding: 5px;
+				background-color: #ff0000;
+				color: #fff;
+			}
+			p#report {
+				font-family: Courier;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="warning">majascan has detected potentially malicious activity on this website<br /> and proactively disabled Javascript.<p>
+		<h4>Report</h4>
+		<p id="report"><p>
+		<script>
+			// add report to list
+			addon.port.on('report', function(msg) {
+				document.getElementById("report").innerHTML = 
+						msg + document.getElementById("report").innerHTML;
+			});
+		</script>
+	</body>
+</html>
