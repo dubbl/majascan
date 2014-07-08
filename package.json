@@ -6,6 +6,7 @@
   "author": "Hauke Luebbers",
   "license": "MIT License",
   "version": "0.1",
+  "dependencies": ["addon-sdk"],
   "preferences": [{
 		"type": "boolint",
 		"title": "XSS Test Code Detection",
